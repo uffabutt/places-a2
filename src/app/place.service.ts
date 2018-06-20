@@ -25,7 +25,7 @@ export class PlaceService {
       attraction: "Swiss Alps", 
       desire_date: new Date('09-01-2018'), 
       travel_alone: true,
-      imgURL: 'assets/images/SA.png'
+      imgURL: 'assets/images/SA.jpg'
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ export class PlaceService {
       attraction: "Opera House", 
       desire_date: new Date('01-01-2019'), 
       travel_alone: false,
-      imgURL: 'assets/images/AO.png'
+      imgURL: 'assets/images/AO.jpg'
     },
     {
       id: 4,
@@ -43,13 +43,13 @@ export class PlaceService {
       attraction: "Effiel Tower", 
       desire_date: new Date('02-10-2019'), 
       travel_alone: false,
-      imgURL: 'assets/images/PF.png'
+      imgURL: 'assets/images/PF.jp2'
     }
   ]
 
   getPlaces():Observable<Place[]>{
     return of(this.places);
   }
-  
+
   constructor() { }
 }

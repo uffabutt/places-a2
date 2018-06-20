@@ -1,0 +1,28 @@
+<h2>Bucket List</h2>
+<div *ngIf="places" class="place">
+  <ul>
+    <li *ngFor="let p of places" class="pl">
+      <ul>
+        <img src="{{p.imgURL}}">
+        <li>
+        {{p.city}}
+        </li>
+        <li>
+          {{p.country}}
+        </li>
+        <li>
+            {{p.attraction}}
+          </li>
+          <li>
+              {{p.desire_date | date:'fullDate'}}
+            </li>
+            <li *ngIf="p.travel_alone">
+               I would like to travel alone.
+              </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<p>
+  place works!
+</p>
